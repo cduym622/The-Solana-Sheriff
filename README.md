@@ -11,3 +11,15 @@ The Solana Sheriff is a full-stack Next.js web app that helps crypto newcomers a
 * Wallet Analyzer: a wallet risk assessment based on on-chain patterns, with an optional AI summary.
 * Scam Token Detector: a token “rugpull risk” scan (liquidity + distribution + mint authority), plus an optional AI verdict.
 * Safety Resource Hub: curated educational content about common scams and best practices
+
+**My contributions included:**
+
+* Built the Wallet Analyzer, including the server-side API route that runs the analysis
+* Integrated the Helius API to page through up to 2,000 transactions per wallet, determine its true age, and condense its history into a bounded evidence set
+* Wrote the wallet-age and transaction-volume risk factors and integrated the Google Gemini API to return a structured risk verdict that cites specific red flags, falling back to the heuristic score if the call fails
+
+My teammate built the Scam Token Detector, the AI Safety Assistant, and the voice features.
+
+### Technologies
+
+**Next.js · TypeScript · Tailwind CSS · Helius API · Google Gemini API**
